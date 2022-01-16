@@ -26,6 +26,8 @@ location = ['4' ,'מיקום']
 classes = ['צוערים','חינוך גופני','חינוך','מדעי הסביבה','מדעי המחשב' , 'מדעי החי','מדעי המזון','ביוטכנולוגיה','שירותי אנוש','פסיכולוגיה','מזרח אסיה','עבודה סוציאלית','רב תחומי','שלטון מקומי','אחר',]
 
 formsUsers = {}
+
+#print to chat by the level
 def forms_online(update, context):
     if(dict[update.message.chat.id]['level'] == 1):
         update.message.reply_text(":) בוא/י נעבור על השלבים לאט ")
@@ -39,6 +41,7 @@ def forms_online(update, context):
     elif(dict[update.message.chat.id]['level'] == 5):
         update.message.reply_text("מלא מייל:")
 
+#check if 1 minute passed
 def minutePassed(oldminute):
     if(oldminute == 0):
         return False
@@ -48,6 +51,7 @@ def minutePassed(oldminute):
     else:
         return False
 
+#get the input text from the user and return the information to the main
 def sample_responses(input_text , id = ''):
     # response handling "input text" is the user massage
     user_messages = str(input_text)
@@ -91,7 +95,7 @@ def start_command(update, context):
 def help_command(update, context):
     update.message.reply_text('אפשר לקבל פרטים כגון: .............')
 
-
+#get the inforamion about the user from the dict and react to user by the level.
 def handle_message(update, context):
     print(dict)
     text = str(update.message.text).lower()
@@ -144,12 +148,14 @@ def stop(bot, update):
 def update_msg():
     pass
 
+#save all the new info to the file
 def saveAllDataOnFile():
     writefile = open('users.txt', 'wb')
     pickle.dump(dict, writefile)
     writefile.close()
     print("Log :")
 
+#get all the info from the file
 def getAllDataFromFile():
     readfile = open('users.txt', 'rb')
     tmp = pickle.loads(readfile.read())
@@ -162,7 +168,7 @@ def main():
     print("LIVE")
     
     dp = updater.dispatcher
-    dp.add_handler(CommandHandler("stopBot123456", stop))
+    dp.add_handler(CommandHandler("stopBot123456", stop))#string to stop the bot
     dp.add_handler(CommandHandler("help", help_command))
     dp.add_handler(MessageHandler(Filters.text, handle_message))
     dp.add_error_handler(error)
