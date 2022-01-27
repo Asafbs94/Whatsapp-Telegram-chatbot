@@ -1,5 +1,6 @@
-# Telegram_Bot
+# chatbot for telegram and whatsapp
 multi services Hebrew Telegram bot developed for Student Unions.
 helps to fill up "Students Requests".
 Deployed @Heroku.
-Feel free to test it, Telegram bot username : @telhai_1_bot
+## check out branches for both telegram & whatsapp
+# use heroku for telegram and twilio for whatsapp
