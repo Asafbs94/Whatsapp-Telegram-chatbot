@@ -9,9 +9,6 @@ Welcome to the Student Union Chatbot! :wave: This chatbot is designed to help st
 - Contact the student union through phone or social media :phone: :computer:
 - Find a specific class on campus :school:
 
-## Demo
-
-<img src="https://i.imgur.com/sFvdZh2.gif" width="200" height="200">
 ## Deployment :cloud:
 
 This chatbot is deployed on [Heroku](https://www.heroku.com/) for Telegram and on [Twilio](https://www.twilio.com/) for WhatsApp.
