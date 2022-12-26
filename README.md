@@ -11,8 +11,7 @@ Welcome to the Student Union Chatbot! :wave: This chatbot is designed to help st
 
 ## Demo
 
-![Alt Text](https://i.imgur.com/sFvdZh2.gif)
-
+<img src="https://i.imgur.com/sFvdZh2.gif" width="200" height="200">
 ## Deployment :cloud:
 
 This chatbot is deployed on [Heroku](https://www.heroku.com/) for Telegram and on [Twilio](https://www.twilio.com/) for WhatsApp.
