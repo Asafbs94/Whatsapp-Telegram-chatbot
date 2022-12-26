@@ -9,6 +9,10 @@ Welcome to the Student Union Chatbot! :wave: This chatbot is designed to help st
 - Contact the student union through phone or social media :phone: :computer:
 - Find a specific class on campus :school:
 
+## Demo
+
+![Alt Text](https://i.imgur.com/sFvdZh2.gif)
+
 ## Deployment :cloud:
 
 This chatbot is deployed on [Heroku](https://www.heroku.com/) for Telegram and on [Twilio](https://www.twilio.com/) for WhatsApp.
@@ -24,5 +28,3 @@ We welcome contributions to the Student Union Chatbot! If you have ideas for new
 ## License :book:
 
 This chatbot is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements :thumbsup:
