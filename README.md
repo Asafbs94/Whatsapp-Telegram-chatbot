@@ -12,7 +12,9 @@ Welcome to the Student Union Chatbot! :wave: This chatbot is designed to help st
 ## Deployment :cloud:
 
 This chatbot is deployed on [Heroku](https://www.heroku.com/) for Telegram and on [Twilio](https://www.twilio.com/) for WhatsApp.
-
+## Branches
+- Telegram - for telegram use
+- Whatsapp - for whatsapp use - you might need an twilo account and a diffrent config
 ## Language :speech_balloon:
 
 The chatbot is currently available in Hebrew.
